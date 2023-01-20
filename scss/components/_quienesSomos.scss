@@ -1,0 +1,26 @@
+/* QUIÉNES SOMOS */ 
+.mainFlex{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    .imagenDeQuienesSomos{
+        width: 200px;
+        height: 200px;
+        margin-left: 650px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: 1px solid white;
+        border-radius: 100px;
+    }
+
+    .textoNegocio{
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 300px;
+        margin-left: 350px;
+        margin-right: 350px;
+        text-align: justify;
+        font-size: x-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}

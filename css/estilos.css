@@ -1,0 +1,371 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  width: 100%; }
+  body .iconoWpp {
+    position: fixed;
+    width: 240px;
+    height: 130px;
+    top: 590px;
+    left: 1330px;
+    font-size: 1.8rem; }
+
+/*----HEADER----*/
+.navbar .container-fluid {
+  background-color: black; }
+  .navbar .container-fluid .navbar-brand {
+    display: flex;
+    height: 80px; }
+  .navbar .container-fluid .collapse {
+    flex-grow: initial; }
+    .navbar .container-fluid .collapse .d-flex .btn.btn-outline-success {
+      color: white;
+      border-color: red;
+      border-radius: 9px; }
+      .navbar .container-fluid .collapse .d-flex .btn.btn-outline-success:hover {
+        background-color: red; }
+
+/* FOOTER */
+#pie-de-pagina h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px; }
+
+#pie-de-pagina .h5Flex {
+  display: flex;
+  justify-content: left;
+  margin-left: 50px;
+  margin-bottom: 5px; }
+  #pie-de-pagina .h5Flex .mapa {
+    border-radius: 100px; }
+
+#pie-de-pagina .h5Flex2 {
+  display: flex;
+  justify-content: center; }
+  #pie-de-pagina .h5Flex2 .redesSocialesContainer {
+    font-size: 1.8rem;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+    list-style: none; }
+    #pie-de-pagina .h5Flex2 .redesSocialesContainer .iconosRedes {
+      color: red; }
+      #pie-de-pagina .h5Flex2 .redesSocialesContainer .iconosRedes:hover {
+        color: white; }
+
+/*----INDEX----*/
+.probandoImagen {
+  background-image: url(../img/fondo-de-madera.jpg);
+  width: 100%; }
+  .probandoImagen h1 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+    padding-top: 100px;
+    animation: animacionTitulo 1.3s 1 ease-in-out; }
+
+@keyframes animacionTitulo {
+  0% {
+    transform: translate(0px, -400px);
+    opacity: 0; }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1; } }
+  .probandoImagen h2 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 5px;
+    animation: animacionSubtitulo 1.3s 1 ease-in-out; }
+
+@keyframes animacionSubtitulo {
+  0% {
+    transform: translate(0px, 400px);
+    opacity: 0; }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1; } }
+  .probandoImagen .desde1960 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+
+.h4Flex {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
+  background-color: black; }
+  .h4Flex .envios {
+    color: white;
+    margin: 0px;
+    padding: 50px; }
+  .h4Flex .aceptamosTodas {
+    color: white;
+    margin: 0px;
+    padding: 50px; }
+  .h4Flex .sitioSeguro {
+    color: white;
+    margin: 0px;
+    padding: 50px; }
+
+.h3FLex {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New       Roman', serif;
+  background-color: black;
+  margin-bottom: 0px; }
+  .h3FLex .cortesV {
+    color: black;
+    font-size: 25px;
+    padding: 130px;
+    background-image: url(../img/cortesVaca);
+    border: 4px solid white;
+    background-size: cover; }
+  .h3FLex .cortesC {
+    color: black;
+    font-size: 25px;
+    padding: 130px;
+    background-image: url(../img/cortesCerdo.jpg);
+    border: 4px solid white;
+    background-size: cover; }
+  .h3FLex .cortesP {
+    color: black;
+    font-size: 25px;
+    padding: 130px;
+    background-image: url(../img/cortesPollo.jpg);
+    border: 4px solid white;
+    background-size: cover; }
+
+/*----PRODUCTOS----*/
+.mainProductos {
+  color: white;
+  margin-bottom: 150px; }
+  .mainProductos .containerColoFondo {
+    position: relative; }
+  .mainProductos .tiendaDeCarnes {
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid white;
+    background-color: black; }
+  .mainProductos .h4Flex {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    background-color: black; }
+    .mainProductos .h4Flex .envios {
+      color: white;
+      margin: 0px;
+      padding: 50px; }
+    .mainProductos .h4Flex .aceptamosTodas {
+      color: white;
+      margin: 0px;
+      padding: 50px; }
+    .mainProductos .h4Flex .sitioSeguro {
+      color: white;
+      margin: 0px;
+      padding: 50px; }
+  .mainProductos .productosGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: repeat(12, 1fr);
+    gap: 20px;
+    padding: 0px;
+    list-style: none;
+    background-color: black; }
+    .mainProductos .productosGrid .cajas {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: larger;
+      border: 2px solid white;
+      background-color: aqua;
+      border-radius: 4px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .mainProductos .productosGrid .c1 {
+      grid-column: 1/4;
+      grid-row: 1/9;
+      background-image: url(../img/peceto_fondoNegro.webp); }
+    .mainProductos .productosGrid .c2 {
+      grid-column: 4/6;
+      grid-row: 1/8;
+      background-image: url(../img/nalga_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c3 {
+      grid-column: 6/8;
+      grid-row: 1/8;
+      background-image: url(../img/bolaLomo_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c4 {
+      grid-column: 8/10;
+      grid-row: 1/8;
+      background-image: url(../img/bifeChorizo_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c5 {
+      grid-column: 10/13;
+      grid-row: 1/8;
+      background-image: url(../img/cuadrada_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c6 {
+      grid-column: 1/4;
+      grid-row: 9/16;
+      background-image: url(../img/bifeAngosto_fondoNegro); }
+    .mainProductos .productosGrid .c7 {
+      grid-column: 4/6;
+      grid-row: 8/16;
+      background-image: url(../img/asado_fondoNegro.jpeg); }
+    .mainProductos .productosGrid .c8 {
+      grid-column: 6/10;
+      grid-row: 8/16;
+      background-image: url(../img/vacio_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c9 {
+      grid-column: 10/13;
+      grid-row: 8/16;
+      background-image: url(../img/tapaAsado_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c10 {
+      background-color: deeppink; }
+    .mainProductos .productosGrid .c11 {
+      background-color: navy; }
+    .mainProductos .productosGrid .c12 {
+      background-color: brown; }
+
+/* QUIÉNES SOMOS */
+.mainFlex {
+  display: flex;
+  color: white;
+  flex-direction: column; }
+  .mainFlex .imagenDeQuienesSomos {
+    width: 200px;
+    height: 200px;
+    margin-left: 650px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid white;
+    border-radius: 100px; }
+  .mainFlex .textoNegocio {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 300px;
+    margin-left: 350px;
+    margin-right: 350px;
+    text-align: justify;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+/*----CONTACTO----*/
+.mainContactoFlex {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-image: url(../img/imagen-carbon2.jpg);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 20px;
+  padding: 60px;
+  text-align: center; }
+
+.formRegister {
+  box-sizing: border-box;
+  width: 400px;
+  background-image: url(../img/imagen-carbon2.jpg);
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  margin-bottom: 150px;
+  animation: deslizar 1.5s 1 linear; }
+
+@keyframes deslizar {
+  0% {
+    transform: translate(-500px);
+    opacity: 0; }
+  100% {
+    transform: translate(0px);
+    opacity: 1; } }
+  .formRegister .fieldsetStyle {
+    text-align: center;
+    border-radius: 10px; }
+    .formRegister .fieldsetStyle div .controls {
+      width: 94%;
+      color: white;
+      background-color: black;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 18px; }
+    .formRegister .fieldsetStyle div .inputConsultas {
+      width: 94%;
+      color: white;
+      background-color: black;
+      padding: 10px;
+      padding-bottom: 80px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 18px; }
+    .formRegister .fieldsetStyle div .botons {
+      width: 100%;
+      background-color: gainsboro;
+      border: none;
+      border-radius: 4px;
+      border: 1px solid black;
+      padding: 12px;
+      color: black;
+      margin: 10px 0px 25px;
+      font-size: 25px; }
+      .formRegister .fieldsetStyle div .botons:hover {
+        color: gainsboro;
+        background-color: black;
+        border: 1px solid red; }
+
+/*----CARRITO----*/
+.mainCarrito {
+  background-color: white;
+  margin-bottom: 150px; }
+  .mainCarrito .iconoCarritoFlex {
+    display: flex;
+    justify-content: center; }
+    .mainCarrito .iconoCarritoFlex .iconoCarrito {
+      font-size: 10rem;
+      color: red;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      border: 1px solid black;
+      border-radius: 300px;
+      margin-top: 30px;
+      background-color: black; }
+  .mainCarrito ul .totalDeCarrito {
+    color: whitesmoke;
+    font-size: larger;
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px; }

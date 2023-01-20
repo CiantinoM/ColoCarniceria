@@ -1,0 +1,36 @@
+/*----HEADER----*/
+.navbar {
+
+    .container-fluid {
+        background-color: black;
+
+        .navbar-brand {
+            display: flex;
+            height: 80px;
+        }
+
+        .collapse {
+            flex-grow: initial;
+
+            .navbar.nav {
+                
+                .nav-item{
+                    .nav-link{
+                        
+                    }
+                }
+            }
+
+            .d-flex {
+                .btn.btn-outline-success {
+                    color: white;
+                    border-color: red;
+                    border-radius: 9px;
+                     &:hover {
+                        background-color: red;
+                    }
+                }
+            }
+        }
+    }
+}

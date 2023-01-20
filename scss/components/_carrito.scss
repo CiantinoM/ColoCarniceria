@@ -1,0 +1,32 @@
+/*----CARRITO----*/
+.mainCarrito{
+    background-color: white;
+    margin-bottom: 150px;
+    .iconoCarritoFlex{
+        display: flex;
+        justify-content: center;
+        .iconoCarrito{
+            font-size: 10rem;
+            color: red;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            border: 1px solid black;
+            border-radius: 300px;
+            margin-top: 30px;
+            background-color: black;
+        }
+    }
+
+    ul{
+        .totalDeCarrito{
+            color: whitesmoke;
+            font-size: larger;
+            text-align: right;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    }
+}

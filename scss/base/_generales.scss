@@ -1,0 +1,19 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+    .iconoWpp{
+        position: fixed;
+        width: 240px;
+        height: 130px;
+        top: 590px;
+        left: 1330px;
+        font-size: 1.8rem;
+    }
+}

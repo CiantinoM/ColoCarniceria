@@ -1,0 +1,122 @@
+/*----PRODUCTOS----*/
+.mainProductos{
+    color: white;
+    margin-bottom: 150px;
+    
+    .containerColoFondo{
+        position: relative;
+    }
+
+    .tiendaDeCarnes{
+        position: absolute;
+        bottom: 2%;
+        left: 1%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border: 1px solid white;
+        background-color: black;
+    }
+
+    .h4Flex{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: larger;
+        background-color: black;
+        .envios{
+            color: white;
+            margin: 0px;
+            padding: 50px;
+        }
+        .aceptamosTodas{
+            color: white;
+            margin: 0px;
+            padding: 50px;
+        }
+        .sitioSeguro{
+            color: white;
+            margin: 0px;
+            padding: 50px;
+        }
+    }
+
+    .productosGrid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-rows: repeat(12, 1fr);
+        gap: 20px;
+        padding: 0px;
+        list-style: none;
+        background-color: black;
+        
+        .cajas{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: larger;
+            border: 2px solid white;
+
+            background-color: aqua;
+            border-radius: 4px;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .c1{
+            grid-column: 1/4;
+            grid-row: 1/9;
+            background-image: url(../img/peceto_fondoNegro.webp);
+        }
+        .c2{
+            grid-column: 4/6;
+            grid-row: 1/8;
+            background-image: url(../img/nalga_fondoNegro.jpg);
+        }
+        .c3{
+            grid-column: 6/8;
+            grid-row: 1/8;
+            background-image: url(../img/bolaLomo_fondoNegro.jpg);
+        }
+        .c4{
+            grid-column: 8/10;
+            grid-row: 1/8;
+            background-image: url(../img/bifeChorizo_fondoNegro.jpg);
+        }
+        .c5{
+            grid-column: 10/13;
+            grid-row: 1/8;
+            background-image: url(../img/cuadrada_fondoNegro.jpg);
+        }
+        .c6{
+            grid-column: 1/4;
+            grid-row: 9/16;
+            background-image: url(../img/bifeAngosto_fondoNegro);
+        }
+        .c7{
+            grid-column: 4/6;
+            grid-row: 8/16;
+            background-image: url(../img/asado_fondoNegro.jpeg);
+         }
+        .c8{
+            grid-column: 6/10;
+            grid-row: 8/16;background-image: url(../img/vacio_fondoNegro.jpg);
+        }
+        .c9{
+            grid-column: 10/13;
+            grid-row: 8/16;
+            background-image: url(../img/tapaAsado_fondoNegro.jpg);
+        }
+        .c10{
+            background-color: deeppink;
+        }
+        .c11{
+            background-color: navy;
+        }
+        .c12{
+            background-color: brown;
+        }
+    }
+
+}

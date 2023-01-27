@@ -1,36 +1,43 @@
 /* FOOTER */
-#pie-de-pagina{
-    h2{
-        color: white;
-        font-size: 1.5rem;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#pie-de-pagina {
+    width: map-get($responsive-container, width-container);
+    padding: map-get($responsive-container, padding-container);
+    border: 1px solid grey;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-top: 20px;                                                                                               
+    h2 {
+        font-family: nth($fontfamily, 1);
+        font-size: nth($fontsize, 7);
+        color: nth($fontcolor, 1);
         text-transform: uppercase;
         text-align: center;
-        margin-top: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-    .h5Flex{
-        display: flex;
-        justify-content: left;
-        margin-left: 50px;
+
+    .h5Flex {
+        @include flex(flex, center, center, row);
         margin-bottom: 5px;
-        
-        .mapa{
+
+        .mapa {
             border-radius: 100px;
         }
     }
-    .h5Flex2{
-        display: flex;
-        justify-content: center;
-        
-        .redesSocialesContainer{
-            font-size: 1.8rem;
+
+    .h5Flex2 {
+        @include flex(flex, center, center, row);
+
+        .redesSocialesContainer {
+            font-size: nth($fontsize, 12);
             margin: 0px 10px;
             margin-bottom: 15px;
             list-style: none;
-            
-            .iconosRedes{
-                color: red;
-                &:hover{
+
+            .iconosRedes {
+                color: nth($fontcolor, 2);
+                &:hover {
                     color: white;
                 }
             }

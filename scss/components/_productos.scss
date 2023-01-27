@@ -1,122 +1,98 @@
 /*----PRODUCTOS----*/
-.mainProductos{
-    color: white;
+.mainProductos {
+    color: nth($fontcolor, 1);
     margin-bottom: 150px;
-    
-    .containerColoFondo{
+
+    .containerColoFondo {
         position: relative;
     }
 
-    .tiendaDeCarnes{
+    .tiendaDeCarnes {
         position: absolute;
+        padding: 15px;
         bottom: 2%;
-        left: 1%;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        left: calc(50% - 165px);
         border: 1px solid white;
         background-color: black;
-    }
 
-    .h4Flex{
-        display: flex;
-        justify-content: center;
-        justify-content: space-evenly;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: larger;
-        background-color: black;
-        .envios{
-            color: white;
-            margin: 0px;
-            padding: 50px;
-        }
-        .aceptamosTodas{
-            color: white;
-            margin: 0px;
-            padding: 50px;
-        }
-        .sitioSeguro{
-            color: white;
-            margin: 0px;
-            padding: 50px;
+        .cuadradoDeLaImagen {
+            font-family: nth($fontfamily, 1);
+            font-size: nth($fontsize, 6);
+            color: nth($fontcolor, 1);
+            margin-bottom: 0px;
         }
     }
 
-    .productosGrid{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        grid-template-rows: repeat(12, 1fr);
-        gap: 20px;
-        padding: 0px;
+    .productosGrid {
+        @include flex(flex, center, center, column);
+        @include grid-productos(grid, repeat(3, 1fr), 35px);
+        width: map-get($responsive-container, width-container);
+        padding: map-get($responsive-container, padding-container);
+        margin: map-get($responsive-container, margin-container);
         list-style: none;
         background-color: black;
-        
-        .cajas{
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: larger;
-            border: 2px solid white;
 
-            background-color: aqua;
+
+        .cajas {
+            @include flex(flex, center, flex-start, column);
+            margin: map-get($responsive-container, margin-container);
+            font-family: nth($fontfamily, 1);
+            font-size: nth($fontsize, 8);
+            color: nth($fontcolor, 1);
+            border: 2px solid white;
             border-radius: 4px;
 
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            
         }
-        .c1{
-            grid-column: 1/4;
-            grid-row: 1/9;
+
+        .c1 {
+            @include cajas-productos (100%, 300px);
             background-image: url(../img/peceto_fondoNegro.webp);
         }
-        .c2{
-            grid-column: 4/6;
-            grid-row: 1/8;
+
+        .c2 {
+            @include cajas-productos (100%, 300px);
             background-image: url(../img/nalga_fondoNegro.jpg);
         }
-        .c3{
-            grid-column: 6/8;
-            grid-row: 1/8;
+
+        .c3 {
+            @include cajas-productos (100%, 300px);
             background-image: url(../img/bolaLomo_fondoNegro.jpg);
         }
-        .c4{
-            grid-column: 8/10;
-            grid-row: 1/8;
+
+        .c4 {
+            @include cajas-productos (100%, 300px);
             background-image: url(../img/bifeChorizo_fondoNegro.jpg);
         }
-        .c5{
-            grid-column: 10/13;
-            grid-row: 1/8;
+
+        .c5 {
+            @include cajas-productos (100%, 300px);
             background-image: url(../img/cuadrada_fondoNegro.jpg);
         }
-        .c6{
-            grid-column: 1/4;
-            grid-row: 9/16;
+
+        .c6 {
+            @include cajas-productos (100%, 300px);
             background-image: url(../img/bifeAngosto_fondoNegro);
         }
-        .c7{
-            grid-column: 4/6;
-            grid-row: 8/16;
+
+        .c7 {
+            @include cajas-productos (100%, 300px);
             background-image: url(../img/asado_fondoNegro.jpeg);
-         }
-        .c8{
-            grid-column: 6/10;
-            grid-row: 8/16;background-image: url(../img/vacio_fondoNegro.jpg);
         }
-        .c9{
-            grid-column: 10/13;
-            grid-row: 8/16;
+
+        .c8 {
+            @include cajas-productos (100%, 300px);
+            background-image: url(../img/vacio_fondoNegro.jpg);
+        }
+
+        .c9 {
+            @include cajas-productos (100%, 300px);
             background-image: url(../img/tapaAsado_fondoNegro.jpg);
         }
-        .c10{
-            background-color: deeppink;
-        }
-        .c11{
-            background-color: navy;
-        }
-        .c12{
-            background-color: brown;
-        }
+
     }
 
 }

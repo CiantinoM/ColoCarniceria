@@ -1,0 +1,51 @@
+/* LISTAS */
+$fontsize: 0.75rem,
+    0.875rem,
+    1rem,
+    1.125rem,
+    1.25rem,
+    1.375rem,
+    1.5rem,
+    1.625rem,
+    10rem,
+    1.75rem,
+    2.5rem,
+    1.8rem;
+
+$fontcolor: #ffffff,
+#ff0000,
+#000000;
+
+
+$fontfamily: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+/*----MAPS----*/
+$responsive-container: (
+    width-container:100%,
+    height-container:100%,
+    margin-container: 0 auto,
+    margin-top-container: 2rem,
+    padding-container: 0px 2rem 0px 2rem,
+);
+
+
+
+/* MIXIN */
+@mixin flex($display, $align, $justify, $direction) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin grid-productos ($display, $grid-template, $grid-gap) {
+    display: $display;
+    grid-template-columns: $grid-template;
+    gap: $grid-gap;
+}
+
+@mixin cajas-productos ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}

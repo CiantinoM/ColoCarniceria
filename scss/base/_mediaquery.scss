@@ -1,0 +1,51 @@
+/*----MEDIAQUERY----*/
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {
+    .cortesCarne {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .h4Flex{
+        @include flex(flex, center, center, column);
+        gap: 10px;
+        text-align: left;
+        .envios{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .aceptamosTodas{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .sitioSeguro{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+
+    .mainProductos {
+        .containerColoFondo {
+            display: none;
+        }
+
+        .productosGrid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 600px) {
+    .cortesCarne {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mainProductos {
+
+        .productosGrid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

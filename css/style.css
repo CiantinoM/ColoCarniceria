@@ -20,15 +20,15 @@ body{
     font-size: 1.8rem;
 }
 
-/* aplico imagen de fondo en el header */
-header{
-  background-image: url(../img/fondo-de-madera.jpg);
+/* Container-fluid background color */
+.container-fluid{
+    background-color: red;
 }
 
 /* estoy probando si puedo poner la imagen de la madera de fondo en todos los titulos juntos, no por separado */
 .probandoImagen{
     background-image: url(../img/fondo-de-madera.jpg);
-    width: 100%;
+    
 }
 
 /* Colo Carniceria ANIMACIÓN */
@@ -174,14 +174,6 @@ footer h2{
     margin-top: 100px;
 }
 
-/* QUEDA INUTILIZADO MOMENTANEAMENTE */
-/* línea divisora del footer */
-.dropdown-divider{
-    color: white;
-    border: 1px solid white;
-    
-}
-
 /* direccion */
 .nuestraSucursal{
     color: white;
@@ -257,7 +249,17 @@ footer h2{
 
 /* MENÚ DE NAVEGACIÓN */ 
 /* color del navbar con bootstrap */
-.navbar-dark .navbar-nav .nav-link{
+.navbar-dark{
+    color: white;
+    font-size: 20px;
+    margin: 0px 0px 0px 25px;
+    padding: 13px;
+    text-decoration: none;
+    transition: background .3s;
+    transition:border-radius 0s;
+}
+
+.nav-link{
     color: white;
     font-size: 20px;
     margin: 0px 0px 0px 25px;
@@ -268,7 +270,7 @@ footer h2{
 }
 
 /* aplico hover al navbar */
-.navbar-dark .navbar-nav .nav-link:hover{
+.nav-link:hover{
     color: white;
     background-color: rgb(55, 53, 53);
     border-radius: 20px;
@@ -322,6 +324,13 @@ footer h2{
 .dropdown-item:hover{
     color: white;
     background-color: grey;
+}
+
+/* línea divisora del dropdown de productos */
+.dropdown-divider{
+    color: white;
+    border: 1px solid white;
+    
 }
 
 /* main de productos */

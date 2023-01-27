@@ -1,13 +1,14 @@
 /*----CARRITO----*/
 .mainCarrito{
-    background-color: white;
     margin-bottom: 150px;
-    .iconoCarritoFlex{
-        display: flex;
-        justify-content: center;
+    .iconoCarritoFlex{ 
+        @include flex(flex, center, center, row);
+        padding: map-get($responsive-container , padding-container );
+
         .iconoCarrito{
-            font-size: 10rem;
-            color: red;
+            font-family: nth($fontfamily, 1 );
+            font-size: nth($fontsize, 9 );
+            color: nth($fontcolor, 2 );
             padding-left: 40px;
             padding-right: 40px;
             padding-top: 25px;
@@ -16,17 +17,6 @@
             border-radius: 300px;
             margin-top: 30px;
             background-color: black;
-        }
-    }
-
-    ul{
-        .totalDeCarrito{
-            color: whitesmoke;
-            font-size: larger;
-            text-align: right;
-            margin-right: 20px;
-            margin-bottom: 10px;
-            padding: 10px;
         }
     }
 }

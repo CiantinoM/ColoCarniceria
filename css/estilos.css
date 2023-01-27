@@ -15,59 +15,101 @@ body {
     left: 1330px;
     font-size: 1.8rem; }
 
+/* LISTAS */
+/*----MAPS----*/
+/* MIXIN */
 /*----HEADER----*/
-.navbar .container-fluid {
-  background-color: black; }
-  .navbar .container-fluid .navbar-brand {
-    display: flex;
-    height: 80px; }
-  .navbar .container-fluid .collapse {
-    flex-grow: initial; }
-    .navbar .container-fluid .collapse .d-flex .btn.btn-outline-success {
-      color: white;
-      border-color: red;
-      border-radius: 9px; }
-      .navbar .container-fluid .collapse .d-flex .btn.btn-outline-success:hover {
-        background-color: red; }
+.navbar-dark {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin: 0px 0px 0px 25px;
+  padding: 13px;
+  text-decoration: none;
+  transition: background .3s;
+  transition: border-radius 0s; }
+  .navbar-dark .container-fluid {
+    background-color: black; }
+    .navbar-dark .container-fluid .navbar-brand {
+      display: flex;
+      height: 80px; }
+    .navbar-dark .container-fluid .collapse {
+      flex-grow: initial; }
+      .navbar-dark .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+        font-size: 1.25rem;
+        color: #ffffff;
+        margin: 0px 0px 0px 25px;
+        transition: background .3s;
+        transition: border-radius 0s; }
+        .navbar-dark .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+          color: white;
+          background-color: #373535;
+          border-radius: 20px; }
+      .navbar-dark .container-fluid .collapse .dropdown-menu {
+        background-color: black; }
+        .navbar-dark .container-fluid .collapse .dropdown-menu .dropdown-item {
+          color: #ffffff; }
+          .navbar-dark .container-fluid .collapse .dropdown-menu .dropdown-item:hover {
+            color: white;
+            background-color: #343434; }
+        .navbar-dark .container-fluid .collapse .dropdown-menu .dropdown-divider {
+          color: #ffffff;
+          border: 1px solid white; }
+      .navbar-dark .container-fluid .collapse .d-flex .btn.btn-outline-success {
+        color: #ffffff;
+        border-color: red;
+        border-radius: 9px; }
+        .navbar-dark .container-fluid .collapse .d-flex .btn.btn-outline-success:hover {
+          background-color: red; }
 
 /* FOOTER */
-#pie-de-pagina h2 {
-  color: white;
-  font-size: 1.5rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 100px; }
-
-#pie-de-pagina .h5Flex {
-  display: flex;
-  justify-content: left;
-  margin-left: 50px;
-  margin-bottom: 5px; }
-  #pie-de-pagina .h5Flex .mapa {
-    border-radius: 100px; }
-
-#pie-de-pagina .h5Flex2 {
-  display: flex;
-  justify-content: center; }
-  #pie-de-pagina .h5Flex2 .redesSocialesContainer {
-    font-size: 1.8rem;
-    margin: 0px 10px;
-    margin-bottom: 15px;
-    list-style: none; }
-    #pie-de-pagina .h5Flex2 .redesSocialesContainer .iconosRedes {
-      color: red; }
-      #pie-de-pagina .h5Flex2 .redesSocialesContainer .iconosRedes:hover {
-        color: white; }
+#pie-de-pagina {
+  width: 100%;
+  padding: 0px 2rem 0px 2rem;
+  border: 1px solid grey;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin-top: 20px; }
+  #pie-de-pagina h2 {
+    font-family: "Gill Sans";
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  #pie-de-pagina .h5Flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 5px; }
+    #pie-de-pagina .h5Flex .mapa {
+      border-radius: 100px; }
+  #pie-de-pagina .h5Flex2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; }
+    #pie-de-pagina .h5Flex2 .redesSocialesContainer {
+      font-size: 1.8rem;
+      margin: 0px 10px;
+      margin-bottom: 15px;
+      list-style: none; }
+      #pie-de-pagina .h5Flex2 .redesSocialesContainer .iconosRedes {
+        color: #ff0000; }
+        #pie-de-pagina .h5Flex2 .redesSocialesContainer .iconosRedes:hover {
+          color: white; }
 
 /*----INDEX----*/
 .probandoImagen {
-  background-image: url(../img/fondo-de-madera.jpg);
-  width: 100%; }
+  width: 100%;
+  padding: 0px 2rem 0px 2rem;
+  background-image: url(../img/fondo-de-madera.jpg); }
   .probandoImagen h1 {
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
+    font-family: "Gill Sans";
+    font-size: 2.5rem;
+    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
     margin: 0px;
@@ -82,9 +124,9 @@ body {
     transform: translate(0px, 0px);
     opacity: 1; } }
   .probandoImagen h2 {
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 28px;
+    font-family: "Gill Sans";
+    font-size: 1.75rem;
+    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
     margin: 0px;
@@ -99,9 +141,9 @@ body {
     transform: translate(0px, 0px);
     opacity: 1; } }
   .probandoImagen .desde1960 {
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-family: "Gill Sans";
+    font-size: 1.25rem;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 0px;
     padding-top: 50px;
@@ -109,183 +151,226 @@ body {
 
 .h4Flex {
   display: flex;
-  justify-content: center;
+  align-items: center;
   justify-content: space-evenly;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: larger;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  width: 100%;
+  padding: 0px 2rem 0px 2rem;
+  margin: 0 auto;
+  font-family: "Gill Sans";
+  font-size: 1.75rem;
+  color: #ffffff;
   background-color: black; }
   .h4Flex .envios {
-    color: white;
-    margin: 0px;
-    padding: 50px; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px; }
   .h4Flex .aceptamosTodas {
-    color: white;
-    margin: 0px;
-    padding: 50px; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px; }
   .h4Flex .sitioSeguro {
-    color: white;
-    margin: 0px;
-    padding: 50px; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px; }
 
-.h3FLex {
+.cortesCarne {
   display: flex;
+  align-items: center;
   justify-content: space-around;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  width: 100%;
+  padding: 0px 2rem 0px 2rem;
+  margin: 0 auto;
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New       Roman', serif;
   background-color: black;
   margin-bottom: 0px; }
-  .h3FLex .cortesV {
-    color: black;
-    font-size: 25px;
-    padding: 130px;
-    background-image: url(../img/cortesVaca);
+  .cortesCarne .cortesV {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    font-family: "Gill Sans";
+    font-size: 1.625rem;
+    color: #000000;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    background-image: url(../../img/cortesVaca.jpg);
     border: 4px solid white;
     background-size: cover; }
-  .h3FLex .cortesC {
-    color: black;
-    font-size: 25px;
-    padding: 130px;
-    background-image: url(../img/cortesCerdo.jpg);
+  .cortesCarne .cortesC {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    font-family: "Gill Sans";
+    font-size: 1.625rem;
+    color: #000000;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    background-image: url(../../img/cortesCerdo.jpg);
     border: 4px solid white;
     background-size: cover; }
-  .h3FLex .cortesP {
-    color: black;
-    font-size: 25px;
-    padding: 130px;
-    background-image: url(../img/cortesPollo.jpg);
+  .cortesCarne .cortesP {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    font-family: "Gill Sans";
+    font-size: 1.625rem;
+    color: #000000;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    background-image: url(../../img/cortesPollo.jpg);
     border: 4px solid white;
     background-size: cover; }
 
 /*----PRODUCTOS----*/
 .mainProductos {
-  color: white;
+  color: #ffffff;
   margin-bottom: 150px; }
   .mainProductos .containerColoFondo {
     position: relative; }
   .mainProductos .tiendaDeCarnes {
     position: absolute;
+    padding: 15px;
     bottom: 2%;
-    left: 1%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    left: calc(50% - 165px);
     border: 1px solid white;
     background-color: black; }
-  .mainProductos .h4Flex {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: larger;
-    background-color: black; }
-    .mainProductos .h4Flex .envios {
-      color: white;
-      margin: 0px;
-      padding: 50px; }
-    .mainProductos .h4Flex .aceptamosTodas {
-      color: white;
-      margin: 0px;
-      padding: 50px; }
-    .mainProductos .h4Flex .sitioSeguro {
-      color: white;
-      margin: 0px;
-      padding: 50px; }
+    .mainProductos .tiendaDeCarnes .cuadradoDeLaImagen {
+      font-family: "Gill Sans";
+      font-size: 1.375rem;
+      color: #ffffff;
+      margin-bottom: 0px; }
   .mainProductos .productosGrid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-template-rows: repeat(12, 1fr);
-    gap: 20px;
-    padding: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    width: 100%;
+    padding: 0px 2rem 0px 2rem;
+    margin: 0 auto;
     list-style: none;
     background-color: black; }
     .mainProductos .productosGrid .cajas {
       display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: larger;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin: 0 auto;
+      font-family: "Gill Sans";
+      font-size: 1.625rem;
+      color: #ffffff;
       border: 2px solid white;
-      background-color: aqua;
       border-radius: 4px;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
     .mainProductos .productosGrid .c1 {
-      grid-column: 1/4;
-      grid-row: 1/9;
+      width: 100%;
+      height: 300px;
       background-image: url(../img/peceto_fondoNegro.webp); }
     .mainProductos .productosGrid .c2 {
-      grid-column: 4/6;
-      grid-row: 1/8;
+      width: 100%;
+      height: 300px;
       background-image: url(../img/nalga_fondoNegro.jpg); }
     .mainProductos .productosGrid .c3 {
-      grid-column: 6/8;
-      grid-row: 1/8;
+      width: 100%;
+      height: 300px;
       background-image: url(../img/bolaLomo_fondoNegro.jpg); }
     .mainProductos .productosGrid .c4 {
-      grid-column: 8/10;
-      grid-row: 1/8;
+      width: 100%;
+      height: 300px;
       background-image: url(../img/bifeChorizo_fondoNegro.jpg); }
     .mainProductos .productosGrid .c5 {
-      grid-column: 10/13;
-      grid-row: 1/8;
+      width: 100%;
+      height: 300px;
       background-image: url(../img/cuadrada_fondoNegro.jpg); }
     .mainProductos .productosGrid .c6 {
-      grid-column: 1/4;
-      grid-row: 9/16;
+      width: 100%;
+      height: 300px;
       background-image: url(../img/bifeAngosto_fondoNegro); }
     .mainProductos .productosGrid .c7 {
-      grid-column: 4/6;
-      grid-row: 8/16;
+      width: 100%;
+      height: 300px;
       background-image: url(../img/asado_fondoNegro.jpeg); }
     .mainProductos .productosGrid .c8 {
-      grid-column: 6/10;
-      grid-row: 8/16;
+      width: 100%;
+      height: 300px;
       background-image: url(../img/vacio_fondoNegro.jpg); }
     .mainProductos .productosGrid .c9 {
-      grid-column: 10/13;
-      grid-row: 8/16;
+      width: 100%;
+      height: 300px;
       background-image: url(../img/tapaAsado_fondoNegro.jpg); }
-    .mainProductos .productosGrid .c10 {
-      background-color: deeppink; }
-    .mainProductos .productosGrid .c11 {
-      background-color: navy; }
-    .mainProductos .productosGrid .c12 {
-      background-color: brown; }
 
 /* QUIÉNES SOMOS */
 .mainFlex {
   display: flex;
-  color: white;
-  flex-direction: column; }
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 2rem 0px 2rem;
+  margin: 0 auto;
+  color: #ffffff; }
   .mainFlex .imagenDeQuienesSomos {
     width: 200px;
     height: 200px;
-    margin-left: 650px;
     margin-top: 50px;
     margin-bottom: 50px;
     border: 1px solid white;
     border-radius: 100px; }
   .mainFlex .textoNegocio {
-    color: white;
+    font-family: "Gill Sans";
+    font-size: 1.5rem;
+    color: #ffffff;
     margin-top: 50px;
-    margin-bottom: 300px;
-    margin-left: 350px;
-    margin-right: 350px;
-    text-align: justify;
-    font-size: x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    margin-bottom: 50px;
+    width: 70%;
+    text-align: center; }
 
 /*----CONTACTO----*/
 .mainContactoFlex {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  color: white;
+  font-family: "Gill Sans MT";
+  font-size: 1.5rem;
+  color: #ffffff;
   background-image: url(../img/imagen-carbon2.jpg);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-top: 20px;
   padding: 60px;
   text-align: center; }
 
 .formRegister {
+  font-family: "Gill Sans";
+  color: #ffffff;
   box-sizing: border-box;
   width: 400px;
   background-image: url(../img/imagen-carbon2.jpg);
@@ -293,9 +378,7 @@ body {
   margin: auto;
   margin-top: 100px;
   border-radius: 50px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: white;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   animation: deslizar 1.5s 1 linear; }
 
 @keyframes deslizar {
@@ -309,36 +392,36 @@ body {
     text-align: center;
     border-radius: 10px; }
     .formRegister .fieldsetStyle div .controls {
+      font-family: "Gill Sans";
+      font-size: 1.125rem;
+      color: #ffffff;
       width: 94%;
-      color: white;
       background-color: black;
       padding: 10px;
       border-radius: 4px;
       margin-bottom: 16px;
-      border: 1px solid white;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 18px; }
+      border: 1px solid white; }
     .formRegister .fieldsetStyle div .inputConsultas {
+      font-family: "Gill Sans";
+      font-size: 1.125rem;
+      color: #ffffff;
       width: 94%;
-      color: white;
       background-color: black;
       padding: 10px;
       padding-bottom: 80px;
       border-radius: 4px;
       margin-bottom: 16px;
-      border: 1px solid white;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 18px; }
+      border: 1px solid white; }
     .formRegister .fieldsetStyle div .botons {
+      font-size: 1.625rem;
+      color: #000000;
       width: 100%;
       background-color: gainsboro;
       border: none;
       border-radius: 4px;
       border: 1px solid black;
       padding: 12px;
-      color: black;
-      margin: 10px 0px 25px;
-      font-size: 25px; }
+      margin: 10px 0px 25px; }
       .formRegister .fieldsetStyle div .botons:hover {
         color: gainsboro;
         background-color: black;
@@ -346,14 +429,17 @@ body {
 
 /*----CARRITO----*/
 .mainCarrito {
-  background-color: white;
   margin-bottom: 150px; }
   .mainCarrito .iconoCarritoFlex {
     display: flex;
-    justify-content: center; }
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0px 2rem 0px 2rem; }
     .mainCarrito .iconoCarritoFlex .iconoCarrito {
+      font-family: "Gill Sans";
       font-size: 10rem;
-      color: red;
+      color: #ff0000;
       padding-left: 40px;
       padding-right: 40px;
       padding-top: 25px;
@@ -362,10 +448,34 @@ body {
       border-radius: 300px;
       margin-top: 30px;
       background-color: black; }
-  .mainCarrito ul .totalDeCarrito {
-    color: whitesmoke;
-    font-size: larger;
-    text-align: right;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    padding: 10px; }
+
+/*----MEDIAQUERY----*/
+@media screen and (max-width: 992px) {
+  .cortesCarne {
+    grid-template-columns: repeat(2, 1fr); }
+  .h4Flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left; }
+    .h4Flex .envios {
+      padding-top: 5px;
+      padding-bottom: 5px; }
+    .h4Flex .aceptamosTodas {
+      padding-top: 5px;
+      padding-bottom: 5px; }
+    .h4Flex .sitioSeguro {
+      padding-top: 5px;
+      padding-bottom: 5px; }
+  .mainProductos .containerColoFondo {
+    display: none; }
+  .mainProductos .productosGrid {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 600px) {
+  .cortesCarne {
+    grid-template-columns: repeat(1, 1fr); }
+  .mainProductos .productosGrid {
+    grid-template-columns: repeat(1, 1fr); } }

@@ -1,53 +1,61 @@
 /*----INDEX----*/
-.probandoImagen{
+.probandoImagen {
+    width: map-get($responsive-container, width-container);
+    padding: map-get($responsive-container, padding-container);
     background-image: url(../img/fondo-de-madera.jpg);
-    width: 100%;
-    h1{
-        color: white;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 40px;
+
+
+
+    h1 {
+        font-family: nth($fontfamily, 1);
+        font-size: nth($fontsize, 11);
+        color: nth($fontcolor, 1);
         text-align: center;
         text-transform: uppercase;
         margin: 0px;
         padding-top: 100px;
         animation: animacionTitulo 1.3s 1 ease-in-out;
-        @keyframes animacionTitulo{
-            0%{
+
+        @keyframes animacionTitulo {
+            0% {
                 transform: translate(0px, -400px);
                 opacity: 0;
-               }
-               
-               100%{
+            }
+
+            100% {
                 transform: translate(0px, 0px);
                 opacity: 1;
-               } 
+            }
         }
     }
-    h2{
-        color: white;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 28px;
+
+    h2 {
+        font-family: nth($fontfamily, 1);
+        font-size: nth($fontsize, 10);
+        color: nth($fontcolor, 1);
         text-align: center;
         text-transform: uppercase;
         margin: 0px;
         padding: 5px;
         animation: animacionSubtitulo 1.3s 1 ease-in-out;
-        @keyframes animacionSubtitulo{
-            0%{
+
+        @keyframes animacionSubtitulo {
+            0% {
                 transform: translate(0px, 400px);
                 opacity: 0;
             }
-        
-            100%{
+
+            100% {
                 transform: translate(0px, 0px);
                 opacity: 1;
             }
         }
     }
-    .desde1960{
-        color: white;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 20px;
+
+    .desde1960 {
+        font-family: nth($fontfamily, 1);
+        font-size: nth($fontsize, 5);
+        color: nth($fontcolor, 1);
         text-align: center;
         margin-bottom: 0px;
         padding-top: 50px;
@@ -55,61 +63,88 @@
     }
 }
 
-.h4Flex{
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: larger;
+
+
+
+.h4Flex {
+    @include flex(flex, center, space-evenly, row);
+    @include grid-productos(grid, repeat(3, 1fr), 35px);
+    width: map-get($responsive-container, width-container);
+    padding: map-get($responsive-container, padding-container);
+    margin: map-get($responsive-container, margin-container);
+    font-family: nth($fontfamily, 1);
+    font-size: nth($fontsize, 10);
+    color: nth($fontcolor, 1);
     background-color: black;
-    
-    .envios{
-        color: white;
-        margin: 0px;
-        padding: 50px;
+
+    .envios {
+        @include flex(flex, center, center, row);
+        color: nth($fontcolor, 1);
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
-    .aceptamosTodas{
-        color: white;
-        margin: 0px;
-        padding: 50px;
+
+    .aceptamosTodas {
+        @include flex(flex, center, center, row);
+        color: nth($fontcolor, 1);
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
-    .sitioSeguro{
-        color: white;
-        margin: 0px;
-        padding: 50px;  
+
+    .sitioSeguro {
+        @include flex(flex, center, center, row);
+        color: nth($fontcolor, 1);
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 
-.h3FLex{
-    display: flex;
-    justify-content: space-around;
+.cortesCarne {
+    @include flex(flex, center, space-around, row);
+    @include grid-productos(grid, repeat(3, 1fr), 35px);
+    width: map-get($responsive-container, width-container);
+    padding: map-get($responsive-container, padding-container);
+    margin: map-get($responsive-container, margin-container);
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New       Roman', serif;
     background-color: black;
-    margin-bottom: 0px; 
-    
-    .cortesV{
-        color: black;
-    font-size: 25px;
-    padding: 130px;
-    background-image: url(../img/cortesVaca);
-    border: 4px solid white;
-    background-size: cover;
-    }
-    .cortesC{
-        color: black;
-    font-size: 25px;
-    padding: 130px;
-    background-image: url(../img/cortesCerdo.jpg);
-    border: 4px solid white;
-    background-size: cover;
-    }
-    .cortesP{
-        color: black;
-        font-size: 25px;
-        padding: 130px;
-        background-image: url(../img/cortesPollo.jpg);
+    margin-bottom: 0px;
+
+    .cortesV {
+        @include flex(flex, flex-start, center, row);
+        font-family: nth($fontfamily, 1);
+        font-size: nth($fontsize, 8);
+        color: nth($fontcolor, 3);
+        padding-top: 125px;
+        padding-bottom: 125px;
+        background-image: url(../../img/cortesVaca.jpg);
         border: 4px solid white;
-        background-size: cover; 
+        background-size: cover;
+    }
+
+    .cortesC {
+        @include flex(flex, flex-start, center, row);
+        font-family: nth($fontfamily, 1);
+        font-size: nth($fontsize, 8);
+        color: nth($fontcolor, 3);
+        padding-top: 125px;
+        padding-bottom: 125px;
+        background-image: url(../../img/cortesCerdo.jpg);
+        border: 4px solid white;
+        background-size: cover;
+    }
+
+    .cortesP {
+        @include flex(flex, flex-start, center, row);
+        font-family: nth($fontfamily, 1);
+        font-size: nth($fontsize, 8);
+        color: nth($fontcolor, 3);
+        padding-top: 125px;
+        padding-bottom: 125px;
+        background-image: url(../../img/cortesPollo.jpg);
+        border: 4px solid white;
+        background-size: cover;
     }
 }

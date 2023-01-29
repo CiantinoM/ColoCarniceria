@@ -65,7 +65,7 @@ body {
 #pie-de-pagina {
   width: 100%;
   padding: 0px 2rem 0px 2rem;
-  border: 1px solid grey;
+  border: 2px solid grey;
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -479,3 +479,7 @@ body {
     grid-template-columns: repeat(1, 1fr); }
   .mainProductos .productosGrid {
     grid-template-columns: repeat(1, 1fr); } }
+
+@media screen and (max-width: 500px) {
+  .textoNegocio {
+    width: 100%; } }

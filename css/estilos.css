@@ -294,15 +294,15 @@ body {
     .mainProductos .productosGrid .c1 {
       width: 100%;
       height: 300px;
-      background-image: url(../img/peceto_fondoNegro.webp); }
+      background-image: url(../../img/peceto_fondoNegro.webp); }
     .mainProductos .productosGrid .c2 {
       width: 100%;
       height: 300px;
-      background-image: url(../img/nalga_fondoNegro.jpg); }
+      background-image: url(../../img/nalga_fondoNegro.jpg); }
     .mainProductos .productosGrid .c3 {
       width: 100%;
       height: 300px;
-      background-image: url(../img/bolaLomo_fondoNegro.jpg); }
+      background-image: url(../../img/bolaLomo_fondoNegro.jpg); }
     .mainProductos .productosGrid .c4 {
       width: 100%;
       height: 300px;
@@ -310,23 +310,143 @@ body {
     .mainProductos .productosGrid .c5 {
       width: 100%;
       height: 300px;
-      background-image: url(../img/cuadrada_fondoNegro.jpg); }
+      background-image: url(../../img/cuadrada_fondoNegro.jpg); }
     .mainProductos .productosGrid .c6 {
       width: 100%;
       height: 300px;
-      background-image: url(../img/bifeAngosto_fondoNegro); }
+      background-image: url(../../img/bifeAngosto_fondoNegro.jpg); }
     .mainProductos .productosGrid .c7 {
       width: 100%;
       height: 300px;
-      background-image: url(../img/asado_fondoNegro.jpeg); }
+      background-image: url(../../img/asado_fondoNegro.jpeg); }
     .mainProductos .productosGrid .c8 {
       width: 100%;
       height: 300px;
-      background-image: url(../img/vacio_fondoNegro.jpg); }
+      background-image: url(../../img/vacio_fondoNegro.jpg); }
     .mainProductos .productosGrid .c9 {
       width: 100%;
       height: 300px;
-      background-image: url(../img/tapaAsado_fondoNegro.jpg); }
+      background-image: url(../../img/tapaAsado_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c10 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/tapa_nalga_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c11 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/matambre_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c12 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/americano_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c13 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/entraña_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c14 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/cima_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c15 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/bife_ancho_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c16 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/lomo2_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c17 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/tapa_nalga_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c18 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/paleta-fondoNegro.jpg); }
+    .mainProductos .productosGrid .c19 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/cuadril_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c20 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/colitacuadril_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c21 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/palomita_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c22 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/tortuguita_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c23 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/osobuco_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c24 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/espinazo_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c25 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/escondido_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c26 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/chorizos_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c27 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/morcilla2_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c28 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/pollo_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c29 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/pechugas_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c30 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/patamuslo_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c31 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/pechitoCerdo2_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c32 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/carreCerdo1_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c33 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/bondiolaCerdo_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c34 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/solomilloCerdo_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c35 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/vacioCerdo_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c36 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/paletaCerdo_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c37 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/jamonCerdo2-fondoNegro.jpg); }
+    .mainProductos .productosGrid .c38 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/riñones_fondoNegro.jpg); }
+    .mainProductos .productosGrid .c39 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../../img/lengua_fondoNegro.jpg); }
 
 /* QUIÉNES SOMOS */
 .mainFlex {
